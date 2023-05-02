@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lucida Grande', sans-serif;
+    src: url(../Fonts/LucidaGrande.ttf);
+}
+body {
+  font-family: 'Lucida Grande', sans-serif;
+}
+a{ /*Zerando todas as propriedades da tag <a>*/
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+main{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  display: grid;
+  width: 952px;
+  height: max-content;
+  grid-template-columns: 1fr 1fr 1fr;
+}

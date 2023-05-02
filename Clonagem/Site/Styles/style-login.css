@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lucida Grande', sans-serif;
+    src: url(../Fonts/LucidaGrande.ttf);
+}
+body {
+  font-family: 'Lucida Grande', sans-serif;
+}
+.login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+}
+.shadow-box{
+    position: absolute;
+    top: 0;
+    height: 85px;
+    width: 100%;
+    /*Gradiente que fica no topo da página*/
+    background: rgb(217,217,217);
+    background: linear-gradient(0deg, rgba(217,217,217,0.05) 0%, rgba(219,219,219,0.4108018207282913) 40%, rgba(195,195,195,0.7) 100%);
+}
+.login-box{
+    grid-area: login-box;
+    display: grid;
+    grid-template-columns: 317px 317px;
+    grid-template-rows: 175px 60px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.ccc-logo{
+    margin: 0 calc((317px - 227px) /2 ) ;
+    display: inline-block;
+    grid-area: ccc-logo;
+    grid-column-start: 1;
+}
+#ccc-logo{
+    width: 225px;
+    height: 121px;
+    border: 1px solid #c3c3c3;
+}
+.form-container{
+    display: inline-block;
+    grid-area: form-container;
+    grid-column-start: 2;
+}
+#text-forgot-pw{
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+}
+.inputs{
+    padding-top: 10px;
+}
+.input{
+    display: block;
+    padding: 10px 10px;
+    height: 30px;
+    width: 245px;
+    border: 1px solid #c3c3c3;
+    margin: 10px 0 0 35px;
+    font-size: 16px;
+}
+.input::placeholder{
+    color: #acacac;
+}
+.form-main{
+    background-image: url(../Imgs/separador_centro_login.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: grid;
+    background-color: #f0f0f0;
+    width: 635px;
+    max-width: 635px;
+    max-height: 235px;
+    border-radius: 10px 10px 0 0;
+    grid-template-columns: 317px 317px;
+}
+.form-footer{/*Parte azul - "Painel do Aluno"*/
+    font-size: 21px;
+    font-weight: normal;
+    color: white;
+    text-align: end;
+    padding: 18px 35px 18px 318px;
+    max-width: 635px;
+    width: 635px;
+    height: 60px;
+    background-color: #0085ba;
+    border-radius: 0 0 10px 10px;
+    grid-column-start: 1;
+}
+.forgot-submit{
+    display: flex;
+    width: 245px;
+    margin-left: 35px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.submit-btn{
+    display: inline-block;
+    max-height: 24px;
+    max-width: 65px;
+    grid-column-start: 2;
+}
+.submit-btn>#entrar{/*Botão entrar*/
+    cursor: pointer;
+    color: white;
+    background-color: #acacac;
+    border: none;
+    font-size: 11px;
+    height: 24px;
+    width: 65px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+.forgot-pw{/*<span>Esqueci minha senha</span>*/
+    width: max-content;
+    grid-column-start: 1;
+    margin-top: 1px;
+    cursor: pointer;
+}
+#text-forgot-pw:hover{ /*Quando passar por cima de "esqueci minha senha", ficará mais escura*/
+    color: #636363;
+}
+a { /*Zerando todas as propriedades da tag <a>*/
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
